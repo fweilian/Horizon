@@ -4,10 +4,11 @@ services:
     container_name: horizon
     volumes:
       - ./data:/app/data
+      - ./docs:/app/docs
       - ./.env:/app/.env:ro
     environment:
-      - TZ=UTC
-    restart: unless-stopped
-    # Run daily at 8:00 AM UTC (adjust as needed)
-    # For one-time run, use: docker compose run --rm horizon
+      - TZ=Asia/Shanghai
+    restart: "no"
+    # Horizon is a batch job. For one-time runs, use:
+    # docker compose run --rm horizon
     command: ["--hours", "24"]

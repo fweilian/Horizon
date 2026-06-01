@@ -17,7 +17,7 @@ COPY .env.example .env.example
 RUN uv sync --frozen --no-dev
 
 # Create volume mount points
-VOLUME ["/app/data"]
+VOLUME ["/app/data", "/app/docs"]
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
