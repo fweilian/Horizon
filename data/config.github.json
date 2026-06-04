@@ -50,6 +50,90 @@
         "category": "ai-tools"
       },
       {
+        "name": "OpenAI News",
+        "url": "https://openai.com/news/rss.xml",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "Anthropic News",
+        "url": "https://www.anthropic.com/news/rss.xml",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "Pragmatic Engineer Newsletter",
+        "url": "https://newsletter.pragmaticengineer.com/feed",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "Latent Space",
+        "url": "https://www.latent.space/feed",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "arXiv cs.CL",
+        "url": "https://rss.arxiv.org/rss/cs.CL",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "MIT Technology Review AI",
+        "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "Reuters Business & Finance",
+        "url": "https://www.reutersagency.com/feed/?best-topics=business-finance",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "Financial Times Home",
+        "url": "https://www.ft.com/rss/home",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "Caixin China Market",
+        "url": "http://china.caixin.com/feeds/rss.xml",
+        "enabled": true,
+        "category": "china-market"
+      },
+      {
+        "name": "WallStreetCN News",
+        "url": "https://rsshub.app/wallstreetcn/news",
+        "enabled": true,
+        "category": "china-market"
+      },
+      {
+        "name": "36Kr",
+        "url": "https://36kr.com/feed",
+        "enabled": true,
+        "category": "china-market"
+      },
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
+        "enabled": true,
+        "category": "community"
+      },
+      {
+        "name": "LangGraph Releases",
+        "url": "https://github.com/langchain-ai/langgraph/releases.atom",
+        "enabled": true,
+        "category": "open-source"
+      },
+      {
         "name": "LWN.net (subscriber full-text)",
         "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
         "enabled": false,
@@ -79,8 +163,15 @@
       "fetch_comments": 5
     },
     "twitter": {
-      "enabled": false,
-      "users": ["karpathy", "ylecun"],
+      "enabled": true,
+      "users": [
+        "GitHub_Daily",
+        "vista8",
+        "OpenAI",
+        "karpathy",
+        "op7418",
+        "ylecun"
+      ],
       "fetch_limit": 10,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
