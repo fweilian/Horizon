@@ -32,6 +32,7 @@ _DEFAULT_API_KEY_ENVS = {
     AIProvider.DOUBAO: "DOUBAO_API_KEY",
     AIProvider.MINIMAX: "MINIMAX_API_KEY",
     AIProvider.DEEPSEEK: "DEEPSEEK_API_KEY",
+    AIProvider.MIMO: "MIMO_API_KEY",
 }
 
 
@@ -170,6 +171,7 @@ class OpenAIClient(AIClient):
         "deepseek": "https://api.deepseek.com",
         "doubao": "https://ark.cn-beijing.volces.com/api/v3",
         "minimax": "https://api.minimax.io/v1",
+        "mimo": "https://api.xiaomimimo.com/v1",
         "ollama": "http://localhost:11434/v1",
     }
 
@@ -505,6 +507,7 @@ def create_ai_client(config: AIConfig) -> AIClient:
         AIProvider.DOUBAO,
         AIProvider.MINIMAX,
         AIProvider.DEEPSEEK,
+        AIProvider.MIMO,
         AIProvider.OLLAMA,
     }:
         return OpenAIClient(config)

@@ -50,6 +50,7 @@ class AIProvider(str, Enum):
     DOUBAO = "doubao"
     MINIMAX = "minimax"
     DEEPSEEK = "deepseek"
+    MIMO = "mimo"
     OLLAMA = "ollama"
 
 
