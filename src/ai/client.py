@@ -171,7 +171,7 @@ class OpenAIClient(AIClient):
         "deepseek": "https://api.deepseek.com",
         "doubao": "https://ark.cn-beijing.volces.com/api/v3",
         "minimax": "https://api.minimax.io/v1",
-        "mimo": "https://api.xiaomimimo.com/v1",
+        "mimo": "https://token-plan-cn.xiaomimimo.com/v1",
         "ollama": "http://localhost:11434/v1",
     }
 
